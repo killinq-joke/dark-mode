@@ -7,7 +7,7 @@ const Navbar = () => {
     setDarkMode(!darkMode);
   };
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${darkMode ? 'dark-mode' : ''}`}>
       <h1>Crypto Tracker</h1>
       <div className="dark-mode__toggle">
         <div
